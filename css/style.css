@@ -1,0 +1,293 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+    margin: 0 auto;
+    width: 1024px;
+    font-family: 'Microsoft JhengHei';
+}
+
+.header{
+    position: relative;
+    background: #f6f6f6;
+}
+.header .link ul{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 10px;
+  padding: 6px 5px;
+}
+.header .link ul a{
+  text-decoration: none;
+  padding: 0 10px 0;
+  display: block;
+}
+.header .link .line{
+  border-right-style: solid;
+  border-right-color: #cccccc;
+  border-right-width: 1px;
+  color:#4460a0;
+}
+.header .link .twt{
+  color:#00aaec;
+}
+.header .logo{
+  background: #FFF;
+  display: flex;
+  justify-content: space-between;
+}
+.header .logo .menu{
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+.header .menu a{
+  text-decoration: none;
+  padding: 14px;
+  display: block;
+  color:#00cc99;
+  transition: all .3s;
+}
+.menu a:hover,.menu a.active{
+  background:#00cc99;
+  color: #fff
+}
+.header .logo .active{
+  border-bottom: 5px solid #00cc99;
+}
+.header .menu ul{
+  display: none;
+}
+.menu .droplist-open{
+  position: absolute;
+  top: 100%;
+  z-index: 3;
+  background: rgba(255,255,255,0.8);
+  width: 100%;
+}
+.menu .menu-item{
+  position: relative;
+}
+.swiper-container {
+	width: 100%;
+	height: 345px;
+  position: absolute;
+  height: 345px;
+  }
+.banner{
+  position: relative;
+}
+.banner .span{
+  position: absolute;
+  top: 30%;
+  background: rgba(0, 0 ,0 , 0.1);
+  width: 100%;
+  padding: 35px 0;
+  z-index: 2;
+}
+.banner h2{
+  display: block;
+  font-size: 38px;
+  color: #fff;
+  margin-left: 25px;
+}
+.banner img{
+  position: absolute;
+  width: 1024px;
+  height: 345px;
+}
+.course{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.courseItem{
+  text-align: center;
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.courseItem h2{
+  font-family: "Microsoft JhengHei";
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.courseItem ul{
+    font-family: "Microsoft JhengHei";
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 50px;
+}
+.courseItem p{
+    font-family: "Microsoft JhengHei";
+    width: 240px;
+    text-align:justify;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.list{
+  margin: 0 auto;
+  text-align: center;
+  margin: 65px 0 0 0;
+}
+.list h3{
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.list .compared th,.list .compared td{ 
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  text-align-last: left;
+  padding: 10px 10px 10px 25px;
+}
+.list .compared th{
+  background: #f7f7f7;
+  font-weight: bold;
+}
+.list .compared .win{
+  color: #22b28e;
+}
+.list .compared{
+  margin: 0 auto;
+  width: 840px;
+  table-layout:fixed
+}
+
+.contact{
+  height: 405px;
+  width: 1024px;
+  margin-top: 60px;
+  background: linear-gradient(#00644c, #009872);
+}
+.contact .form{
+  display: flex;
+  justify-content: space-around;
+}
+.form .space{
+  width: 460px;
+  height: 245px;
+  background: #fff;
+  border-radius: 5px;
+}
+.form input{
+  width: 446.8px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+.contact p,.contact h3{
+  color: #fff
+}
+.contact h3{
+  font-size: 26px;
+  text-align: center;
+  padding: 40px 0 35px 0;
+}
+.form p{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.form .btn{
+  position: relative;
+  margin-top: 40px;
+}
+.form .btn input{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 70px;
+  height: 35px;
+  background: #00cc99;
+  border-color: #00cc99;
+  color: #fff;
+}
+.form ul{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.footer{
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer img{
+  width: 175px;
+  padding: 25px 0 59px 20px;
+}
+.footer .info{
+  padding: 25px 15px 0 0;
+}
+.footer .info p{
+  margin-bottom: 10px;
+}
+.footer .info a,.footer .info span{
+  text-decoration: none;
+  color: #e33b88;
+}
+.pic{
+    height: 160px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top a{
+  text-decoration: none;
+  color:#019e77;
+  font-size: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
